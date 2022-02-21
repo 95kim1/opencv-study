@@ -23,5 +23,6 @@ to study opencv
   > - $(OPENCV_DIR)\x64\vc15\lib   
   
   > 입력/추가 종속성:  
-  > - opencv_world455d.lib
+  > - debug   :  opencv_world455d.lib
+  > - release :  opencv_world455.lib
 

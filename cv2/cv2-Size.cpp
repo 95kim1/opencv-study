@@ -1,6 +1,31 @@
 #include "opencv2/core/types.hpp"
 #include <iostream>
 #include <vector>
+/*
+template <typename _Tp>
+_Tp height
+_Tp width
+
+Size_ ()
+Size_ (_Tp _width, _Tp _height)
+Size_ (const Size_ &sz)=default
+Size_ (Size_ &&sz) CV_NOEXCEPT=default
+Size_ (const Point_< _Tp > &pt)
+ 
+_Tp 	area () const
+double 	aspectRatio () const //width/height.
+bool 	empty () const
+
+template <typename _Tp2 >
+operator Size_< _Tp2 > () const //conversion of another data type.
+
+Size_ & 	operator= (const Size_ &sz)=default
+Size_ & 	operator= (Size_ &&sz) CV_NOEXCEPT=default
+
+typedef Size_<int> Size2i;
+typedef Size2i Size;
+typedef Size_<float> Size2f;
+*/
 
 void print_size(const cv::Size& size, cv::String start = "", cv::String end = "\n") {
 	std::cout << start << "[" << size.width << " / " << size.height << " = " << size.aspectRatio() << "]" << end;

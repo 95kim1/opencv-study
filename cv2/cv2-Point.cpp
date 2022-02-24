@@ -2,6 +2,40 @@
 #include <iostream>
 #include <vector>
 
+/*
+template <typename _Tp>
+_Tp x
+_Tp y
+
+cv::Point_< _Tp >::Point_	(		)	
+cv::Point_< _Tp >::Point_	(	_Tp 	_x, _Tp 	_y )		
+cv::Point_< _Tp >::Point_	(	const Point_< _Tp > & 	pt	)	
+cv::Point_< _Tp >::Point_	(	const Size_< _Tp > & 	sz	)	
+cv::Point_< _Tp >::Point_	(	const Vec< _Tp, 2 > & 	v	)
+
+double cv::Point_< _Tp >::cross	(	const Point_< _Tp > & 	pt	)	const
+_Tp cv::Point_< _Tp >::dot	(	const Point_< _Tp > & 	pt	)	const;
+bool 	inside (const Rect_< _Tp > &r) const;
+
+pt1 = pt2 + pt3;
+pt1 = pt2 - pt3;
+pt1 = pt2 * a;
+pt1 = a * pt2;
+pt1 = pt2 / a;
+pt1 += pt2;
+pt1 -= pt2;
+pt1 *= a;
+pt1 /= a;
+double value = norm(pt); // L2 norm
+pt1 == pt2;
+pt1 != pt2;
+
+typedef Point_<int> Point2i;
+typedef Point2i Point;
+typedef Point_<float> Point2f;
+typedef Point_<double> Point2d;
+*/
+
 void print_point(const cv::Point& p, cv::String start="", cv::String end = "\n") {
 	std::cout << start << "[" << p.x << ", " << p.y << "]" << end;
 }
@@ -40,3 +74,4 @@ int main(void) {
 
 	return 0;
 }
+
